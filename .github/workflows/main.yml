@@ -4,3 +4,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - run: nginx -v
+            - run: ansible-playbook -i .github/workflows/inventory.ini ,github/workflows/main.yml
